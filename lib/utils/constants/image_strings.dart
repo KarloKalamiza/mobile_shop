@@ -15,4 +15,9 @@ class CustomImages {
   // verify email screen
   static const String success = "assets/images/onboarding/success.gif";
   static const String confirmLetter = "assets/images/onboarding/confirmLetter.gif";
+
+  // home page banners - carousel slider
+  static const String banner1 = "assets/images/banners/jacketbanner.jpg";
+  static const String banner2 = "assets/images/banners/jeansbanner.jpg";
+  static const String banner3 = "assets/images/banners/shoesbanner.jpg";
 }
