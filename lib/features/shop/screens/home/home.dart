@@ -1,9 +1,8 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:karlo_kalamiza_shop/common/widgets/rounded_image.dart';
+import 'package:karlo_kalamiza_shop/common/widgets/product_cards/card_gridview.dart';
+import 'package:karlo_kalamiza_shop/common/widgets/product_cards/productcard_vertical.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/search_bar.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/section_heading.dart';
-import 'package:karlo_kalamiza_shop/common/widgets/shape_widgets/custom_curved_edges.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/colors.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/image_strings.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/sizes.dart';
@@ -57,15 +56,29 @@ class HomeScreen extends StatelessWidget {
           ),
 
           // banner carousel view
-          const Padding(
-            padding: EdgeInsets.all(CustomSizes.defaultSpace),
-            child: PromoSlider(
-              banners: [
-                CustomImages.banner1,
-                CustomImages.banner2,
-                CustomImages.banner3
-              ],
-            ),
+          Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(CustomSizes.defaultSpace),
+                child: Column(
+                  children: [
+                    const PromoSlider(
+                      banners: [
+                        CustomImages.banner1,
+                        CustomImages.banner2,
+                        CustomImages.banner3
+                      ],
+                    ),
+                    const SizedBox(
+                      height: CustomSizes.spaceBtwItems,
+                    ),
+                    CustomGridLayout(itemCount: 8, itemBuilder: (_, index) => const ProductCardVertical(),),
+                  ],
+                ),
+              ),
+
+              // product cards
+            ],
           ),
         ],
       )),

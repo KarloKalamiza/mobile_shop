@@ -5,7 +5,6 @@ import 'package:karlo_kalamiza_shop/common/widgets/rounded_image.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/shape_widgets/custom_curved_edges.dart';
 import 'package:karlo_kalamiza_shop/features/shop/screens/home/controllers/home_controller.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/colors.dart';
-import 'package:karlo_kalamiza_shop/utils/constants/image_strings.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/sizes.dart';
 
 class PromoSlider extends StatelessWidget {
@@ -39,7 +38,7 @@ class PromoSlider extends StatelessWidget {
                 CircularContainer(
                   width: 20,
                   height: 4,
-                  color: controller.carouselCurrentIndex == i
+                  backgroundColor: controller.carouselCurrentIndex == i
                       ? CustomColor.primary
                       : CustomColor.grey,
                   margin: const EdgeInsets.only(right: CustomSizes.md),
