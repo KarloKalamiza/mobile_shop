@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/rounded_image.dart';
+import 'package:karlo_kalamiza_shop/features/shop/screens/profile/profile_details.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/image_strings.dart';
 
 class ProfileHeader extends StatelessWidget {
@@ -22,7 +24,7 @@ class ProfileHeader extends StatelessWidget {
       trailing: IconButton(
         icon: const Icon(Iconsax.edit),
         color: Colors.white,
-        onPressed: () {},
+        onPressed: () => Get.to(const ProfileDetails()),
       ),
     );
   }
