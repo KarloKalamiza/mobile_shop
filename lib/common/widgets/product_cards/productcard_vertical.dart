@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:karlo_kalamiza_shop/common/widgets/brand_title_icon.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/circular_icon.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/shape_widgets/custom_curved_edges.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/colors.dart';
@@ -16,7 +17,7 @@ class ProductCardVertical extends StatelessWidget {
     final dark = CustomHelper.isDarkMode(context);
 
     return GestureDetector(
-      onTap: (){},
+      onTap: () {},
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -77,50 +78,44 @@ class ProductCardVertical extends StatelessWidget {
                     textAlign: TextAlign.left,
                   ),
                   const SizedBox(height: CustomSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        "Nike",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context)
-                            .textTheme
-                            .labelMedium!
-                            .apply(color: Colors.grey),
-                      ),
-                      const SizedBox(width: CustomSizes.spaceBtwItems / 2,),
-                      const Icon(Iconsax.verify5, color: CustomColor.primary, size: CustomSizes.iconxs,),
-                    ],
-                  ),
-
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        '\$35',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.headlineMedium,
-                      ),
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: CustomColor.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(CustomSizes.cardRadiusMd),
-                            bottomRight: Radius.circular(CustomSizes.productImageRadius)
-                          )
-                        ),
-                        child: const SizedBox(
-                          width: CustomSizes.iconlg * 1.2,
-                          height: CustomSizes.iconlg * 1.2,
-                          child: Center(child: Icon(Iconsax.add, color: CustomColor.white,)),
-                        ),
-                      ),
-                    ],
-                  ),
+                  const BrandTitleWithIcon(title: 'Nike',),
                 ],
               ),
-            )
+            ),
+
+            const Spacer(),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: CustomSizes.sm),
+                  child: Text(
+                    '\$35',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  ),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                      color: CustomColor.dark,
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(CustomSizes.cardRadiusMd),
+                          bottomRight:
+                              Radius.circular(CustomSizes.productImageRadius))),
+                  child: const SizedBox(
+                    width: CustomSizes.iconlg * 1.2,
+                    height: CustomSizes.iconlg * 1.2,
+                    child: Center(
+                        child: Icon(
+                      Iconsax.add,
+                      color: CustomColor.white,
+                    )),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),

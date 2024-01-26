@@ -3,7 +3,6 @@ import 'package:karlo_kalamiza_shop/common/widgets/product_cards/card_gridview.d
 import 'package:karlo_kalamiza_shop/common/widgets/product_cards/productcard_vertical.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/search_bar.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/section_heading.dart';
-import 'package:karlo_kalamiza_shop/utils/constants/colors.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/image_strings.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/sizes.dart';
 import 'widgets/categories.dart';
@@ -42,7 +41,6 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       CustomSectionHeading(
                         title: "Popular categories",
-                        textColor: CustomColor.light,
                       ),
                       SizedBox(
                         height: CustomSizes.spaceBtwItems,
@@ -72,7 +70,15 @@ class HomeScreen extends StatelessWidget {
                     const SizedBox(
                       height: CustomSizes.spaceBtwItems,
                     ),
-                    CustomGridLayout(itemCount: 8, itemBuilder: (_, index) => const ProductCardVertical(),),
+                    const CustomSectionHeading(
+                        title: "Popular products"),
+                    const SizedBox(
+                      height: CustomSizes.spaceBtwItems,
+                    ),
+                    CustomGridLayout(
+                      itemCount: 8,
+                      itemBuilder: (_, index) => const ProductCardVertical(),
+                    ),
                   ],
                 ),
               ),
