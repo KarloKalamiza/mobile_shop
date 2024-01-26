@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/brand_title_icon.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/circular_icon.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/shape_widgets/custom_curved_edges.dart';
+import 'package:karlo_kalamiza_shop/features/shop/screens/product/product_details.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/colors.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/image_strings.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/sizes.dart';
@@ -17,7 +19,7 @@ class ProductCardVertical extends StatelessWidget {
     final dark = CustomHelper.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetails()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),

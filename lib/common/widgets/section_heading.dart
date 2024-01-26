@@ -21,6 +21,7 @@ class CustomSectionHeading extends StatelessWidget {
     final dark = CustomHelper.isDarkMode(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
           title,

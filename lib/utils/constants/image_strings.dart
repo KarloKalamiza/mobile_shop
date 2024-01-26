@@ -20,4 +20,10 @@ class CustomImages {
   static const String banner1 = "assets/images/banners/jacketbanner.jpg";
   static const String banner2 = "assets/images/banners/jeansbanner.jpg";
   static const String banner3 = "assets/images/banners/shoesbanner.jpg";
+
+  // shoes
+  static const String nike1 = "assets/images/shoes/nike1.png";
+  static const String nike2 = "assets/images/shoes/nike2.jpg";
+  static const String nike3 = "assets/images/shoes/nike4.jpg";
+  static const String nikeCover = "assets/images/shoes/nike3.jpg";
 }
