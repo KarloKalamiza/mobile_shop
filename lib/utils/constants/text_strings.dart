@@ -25,7 +25,7 @@ class CustomTexts {
   static const String signInWith = "Or sign in with";
 
   // sign up screen
-  static const String letsCreateAccount = "Let\'s create Your account";
+  static const String letsCreateAccount = "Let's create Your account";
   static const String firstname = "First Name";
   static const String lastname = "Last Name";
   static const String username = "Username";
