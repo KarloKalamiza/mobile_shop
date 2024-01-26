@@ -32,9 +32,7 @@ class HomeScreen extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 ),
-                const SizedBox(
-                  height: CustomSizes.spaceBtwSections,
-                ),
+
                 const Padding(
                   padding: EdgeInsets.only(left: CustomSizes.defaultSpace),
                   child: Column(
@@ -48,7 +46,9 @@ class HomeScreen extends StatelessWidget {
                       HomeCategories(),
                     ],
                   ),
-                )
+                ),
+                const SizedBox(height: CustomSizes.spaceBtwSections,)
+
               ],
             ),
           ),
@@ -82,7 +82,6 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-
               // product cards
             ],
           ),

@@ -13,7 +13,6 @@ class PrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return CurvedEdgeContainer(
       child: SizedBox(
-        height: 400,
         child: Container(
           color: CustomColor.primary,
           padding: const EdgeInsets.only(bottom: 0),
