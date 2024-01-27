@@ -27,14 +27,12 @@ class BrandTitleWithIcon extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Expanded(
-          child: BrandTitleText(
-            title: title,
-            maxLines: maxLines,
-            textAlign: textAlign,
-            color: textColor,
-            brandTextSize: brandTextSizes,
-          ),
+        BrandTitleText(
+          title: title,
+          maxLines: maxLines,
+          textAlign: textAlign,
+          color: textColor,
+          brandTextSize: brandTextSizes,
         ),
         const SizedBox(
           width: CustomSizes.spaceBtwItems / 2,

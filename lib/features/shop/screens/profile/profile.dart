@@ -35,7 +35,7 @@ class ProfileScreen extends StatelessWidget {
                 const CustomSectionHeading(title: "Account Settings"),
                 const SizedBox(height: CustomSizes.spaceBtwItems,),
                 SettingsMenuTile(icon: Iconsax.safe_home, title: "My addresses", subtitle: "Set delivery address", onTap: () => Get.to(() => const AddressesScreen()),),
-                SettingsMenuTile(icon: Iconsax.shopping_cart, title: "My cart", subtitle: "Add or remove products", onTap: (){},),
+                SettingsMenuTile(icon: Iconsax.shopping_cart, title: "My cart", subtitle: "Add or remove products", onTap: () {},),
                 SettingsMenuTile(icon: Iconsax.bag_tick, title: "My orders", subtitle: "In adn completed progress orders", onTap: (){},),
                 SettingsMenuTile(icon: Iconsax.bank, title: "Bank Account", subtitle: "Withdraw balance to registered bank account", onTap: (){},),
                 SettingsMenuTile(icon: Iconsax.discount_shape, title: "my Coupons", subtitle: "All discounted coupons", onTap: (){},),
