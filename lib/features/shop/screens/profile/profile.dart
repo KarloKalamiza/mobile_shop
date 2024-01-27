@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/appbar/custom_appbar.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/section_heading.dart';
 import 'package:karlo_kalamiza_shop/features/shop/screens/home/widgets/home_header.dart';
+import 'package:karlo_kalamiza_shop/features/shop/screens/profile/addresses/addresses_screen.dart';
 import 'package:karlo_kalamiza_shop/features/shop/screens/profile/widgets/settings_menu.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/colors.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/sizes.dart';
@@ -32,7 +34,7 @@ class ProfileScreen extends StatelessWidget {
               children: [
                 const CustomSectionHeading(title: "Account Settings"),
                 const SizedBox(height: CustomSizes.spaceBtwItems,),
-                SettingsMenuTile(icon: Iconsax.safe_home, title: "My addresses", subtitle: "Set delivery address", onTap: (){},),
+                SettingsMenuTile(icon: Iconsax.safe_home, title: "My addresses", subtitle: "Set delivery address", onTap: () => Get.to(() => const AddressesScreen()),),
                 SettingsMenuTile(icon: Iconsax.shopping_cart, title: "My cart", subtitle: "Add or remove products", onTap: (){},),
                 SettingsMenuTile(icon: Iconsax.bag_tick, title: "My orders", subtitle: "In adn completed progress orders", onTap: (){},),
                 SettingsMenuTile(icon: Iconsax.bank, title: "Bank Account", subtitle: "Withdraw balance to registered bank account", onTap: (){},),
