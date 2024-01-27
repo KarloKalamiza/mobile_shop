@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:karlo_kalamiza_shop/common/styles/spacing_styles.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/sizes.dart';
-import 'package:karlo_kalamiza_shop/utils/constants/text_strings.dart';
 import 'package:karlo_kalamiza_shop/utils/helpers/custom_helper.dart';
 
 class SuccessScreen extends StatelessWidget {
@@ -32,7 +31,7 @@ class SuccessScreen extends StatelessWidget {
 
               SizedBox(width: double.infinity, child: ElevatedButton(
                 onPressed: onPressed,
-                child: const Text(CustomTexts.login),
+                child: const Text("Done"),
               ),),
             ],
           ),
