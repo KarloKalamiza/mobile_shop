@@ -27,8 +27,8 @@ class CustomSectionHeading extends StatelessWidget {
           title,
           style: Theme.of(context)
               .textTheme
-              .headlineSmall!
-              .apply(color: dark ? Colors.white : CustomColor.primary),
+              .headlineMedium!
+              .apply(color: dark ? Colors.white : CustomColor.black),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/appbar/custom_appbar.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/appbar/tabbar.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/brand_card.dart';
@@ -6,6 +7,7 @@ import 'package:karlo_kalamiza_shop/common/widgets/product_card/card_menu_item.d
 import 'package:karlo_kalamiza_shop/common/widgets/product_cards/card_gridview.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/search_bar.dart';
 import 'package:karlo_kalamiza_shop/common/widgets/section_heading.dart';
+import 'package:karlo_kalamiza_shop/features/shop/screens/product/all_brands/all_brands.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/colors.dart';
 import 'package:karlo_kalamiza_shop/utils/constants/sizes.dart';
 import 'package:karlo_kalamiza_shop/utils/helpers/custom_helper.dart';
@@ -47,28 +49,25 @@ class StoreScreen extends StatelessWidget {
                       physics: const NeverScrollableScrollPhysics(),
                       children: [
                         // search bar
-                        const SizedBox(
-                          height: CustomSizes.spaceBtwItems,
-                        ),
                         CustomSearchBar(
                           title: Text(
                             "Search",
                             style: Theme.of(context)
                                 .textTheme
-                                .headlineMedium!
+                                .titleMedium!
                                 .apply(color: CustomColor.darkGrey),
                           ),
                           showBorder: true,
                           showBackground: false,
                         ),
                         const SizedBox(
-                          height: CustomSizes.spaceBtwItems,
+                          height: CustomSizes.spaceBtwSections,
                         ),
 
-                        // Factured brands
+                        // Popular brands
                         CustomSectionHeading(
-                            title: "Factured Brands",
-                            onPressed: () {},
+                            title: "Popular Brands",
+                            onPressed: () => Get.to(() => const AllBrands()),
                             buttonVisible: true),
                         const SizedBox(
                           height: CustomSizes.spaceBtwItems / 1.5,
