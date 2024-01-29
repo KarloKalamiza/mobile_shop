@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "846151465019",
+    "project_id": "e-commerce-mobile-app-93af5",
+    "storage_bucket": "e-commerce-mobile-app-93af5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846151465019:android:3e0aef1a13f0463093441e",
+        "android_client_info": {
+          "package_name": "com.karloshop.karlo_kalamiza_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846151465019-kc8vs46rltla8dtulfe98h30c1ti0ijt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.karloshop.karlo_kalamiza_shop",
+            "certificate_hash": "6b308d831745f4012d661dccbab85ddb70fe3f24"
+          }
+        },
+        {
+          "client_id": "846151465019-ifbjaja8plpilocl5en5m66rilf71fql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKXm3fSO_lYe-k4N67y0V5JfER2ycSTOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846151465019-ifbjaja8plpilocl5en5m66rilf71fql.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "846151465019-aou69lmj1qd0jr0f6b4mmfdijt69esrf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.karloshop.karloKalamizaShop"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
